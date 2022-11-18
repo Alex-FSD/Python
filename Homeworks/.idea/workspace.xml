@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e405cac-794f-40de-a88c-95139f956ba1" name="Changes" comment="Created a repository for python, uploaded homework">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4e405cac-794f-40de-a88c-95139f956ba1" name="Changes" comment="Fix repository" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +78,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668758544126</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix repository">
+      <created>1668761062581</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668761062581</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fix repository">
+      <created>1668761069140</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668761069140</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created a repository for python, uploaded homework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a repository for python, uploaded homework" />
+    <MESSAGE value="Fix repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix repository" />
   </component>
 </project>
