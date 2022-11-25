@@ -8,6 +8,7 @@
 
 """
 
+
 def input_values(inputText):
     correct_value = False
     while not correct_value:
