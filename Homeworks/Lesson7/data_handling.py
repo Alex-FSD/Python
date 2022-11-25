@@ -8,23 +8,23 @@ def input_data():
 
 
 def import_data(data):
-    with open('phonebook.csv', 'a') as file:
-        file.write(','.join(data))
+    with open("phonebook.csv", "a") as file:
+        file.write(",".join(data))
         file.write(f"\n")
 
 
 def export_data(data, filename):
-    with open(filename, 'w') as file:
+    with open(filename, "w") as file:
         for rec in data:
-            file.write(','.join(rec))
+            file.write(",".join(rec))
             file.write("\n")
 
 
 def output_data():
     data = []
-    with open('phonebook.csv', 'r') as file:
+    with open("phonebook.csv", "r") as file:
         for line in file:
-            data.append(line.strip().split(','))
+            data.append(line.strip().split(","))
     return data
 
 
