@@ -32,7 +32,7 @@ def input_action():
             else:
                 file_extension = ".csv"
             file_path = "export files" + "/"
-            dh.export_data(data, file_path+filename + file_extension)
+            dh.export_data(data, file_path + filename + file_extension)
         except ValueError:
             print("Ошибка: Не корректное имя файла")
     elif choose == "3":
