@@ -28,6 +28,15 @@ def output_data():
     return data
 
 
+def search_data(value, data):
+    if len(data) > 0:
+        for rec in data:
+            if value in rec:
+                return rec
+    else:
+        return None
+
+
 def print_data(data):
     if len(data) > 0:
         print()
