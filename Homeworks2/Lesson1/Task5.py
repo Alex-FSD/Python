@@ -8,3 +8,17 @@
 фирмы в расчёте на одного сотрудника.
 
 """
+
+profit = int(input("Введите значение выручки: "))
+losses = int(input("Введите значение издержек: "))
+
+if profit > losses:
+    print(f"Прибыль = {profit - losses}")
+    print(f"Рентабельность = {(profit - losses)/ profit * 100:.2f} %")
+    count = int(input("Введите количество сотрудников: "))
+    print(f"ЗП сотрудника = {(profit - losses)/count:.2f}")
+elif profit < losses:
+    print(f"Убыток = {profit} - {losses}")
+else:
+    print("Отработали в ноль")
+

@@ -6,3 +6,10 @@
 написанную ранее функцию int_func().
 
 """
+
+
+def my_func(s):
+    return s.title()
+
+
+print(my_func("text text text text text"))

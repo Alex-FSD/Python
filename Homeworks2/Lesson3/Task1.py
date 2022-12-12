@@ -5,3 +5,16 @@
 ноль.
 
 """
+
+
+def div(n1, n2):
+    try:
+        res = n1 / n2
+    except ZeroDivisionError:
+        return 'Ошибка: Деление на ноль'
+    return f'Результат = {res}'
+
+
+num1 = int(input("Введите первое число: "))
+num2 = int(input("Введите второе число: "))
+print(div(num1, num2))

@@ -6,3 +6,11 @@
 пользователе одной строкой.
 
 """
+
+
+def my_func(name, surname, year, city, email, phone):
+    return " ".join([name, surname, year, city, email, phone])
+
+
+print(my_func(surname="Иванов", name="Иван", year="2000",
+           city="Москва", email="ivan@mail.ru", phone="12-34-56"))

@@ -6,3 +6,10 @@
 Например, print(int_func(‘text’)) -> Text.
 
 """
+
+
+def my_func(s):
+    return s.capitalize()
+
+
+print(my_func("text"))
