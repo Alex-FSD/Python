@@ -11,3 +11,25 @@
 повторение элементов списка прекратится.
 
 """
+
+from itertools import count
+from itertools import cycle
+
+for i in count(int(input('Введите стартовое число '))):
+    print(i, " ", end="")
+    if i >= 10:
+        print()
+        break
+
+print()
+
+my_list = ["A", "B", "C", "D"]
+counter = 0
+for i in cycle(my_list):
+    print(i, " ", end="")
+    counter += 1
+    if counter % len(my_list) == 0:
+        print()
+    if counter >= len(my_list) * 5:
+        print()
+        break

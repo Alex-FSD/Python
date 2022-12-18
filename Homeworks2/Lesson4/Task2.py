@@ -10,3 +10,10 @@
 Результат: [12, 44, 4, 10, 78, 123].
 
 """
+
+my_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
+res_list = [i
+            for num, i in enumerate(my_list)
+            if (num > 0) and (my_list[num] > my_list[num - 1])]
+print(f"Исходный список: {my_list}")
+print(f"Результат: {res_list}")

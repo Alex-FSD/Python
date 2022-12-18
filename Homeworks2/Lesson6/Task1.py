@@ -14,3 +14,43 @@
 выводить соответствующее сообщение и завершать скрипт.
 
 """
+
+from time import sleep
+
+
+class TrafficLight:
+    __color = ["Красный", "Желтый", "Зеленый"]
+
+    def running(self):
+        i = 0
+        while i < 6:
+            print(f"{TrafficLight.__color[i % 3]}")
+            if i % 3 == 0:
+                j = 7
+                while j >= 1:
+                    print(f"{j}...", end="")
+                    if j == 1:
+                        print()
+                    j -= 1
+                    sleep(1)
+            elif i % 3 == 1:
+                j = 2
+                while j >= 1:
+                    print(f"{j}...", end="")
+                    if j == 1:
+                        print()
+                    j -= 1
+                    sleep(1)
+            elif i % 3 == 2:
+                j = 5
+                while j >= 1:
+                    print(f"{j}...", end="")
+                    if j == 1:
+                        print()
+                    j -= 1
+                    sleep(1)
+            i += 1
+
+
+TrafficLight = TrafficLight()
+TrafficLight.running()

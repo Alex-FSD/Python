@@ -6,3 +6,12 @@
 параметрами.
 
 """
+
+from sys import argv
+
+file, time, salary, bonus = argv
+try:
+    res = int(time) * int(salary) + int(bonus)
+    print(f"Заработная плата сотрудника = {res}")
+except ValueError as err:
+    print("Ошибка: ", err)

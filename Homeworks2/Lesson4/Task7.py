@@ -9,3 +9,21 @@
 четырёх 4! = 1 * 2 * 3 * 4 = 24.
 
 """
+
+from itertools import count
+from math import factorial
+
+
+def fibo_gen():
+    for j in count(1):
+        yield factorial(j)
+
+
+gen = fibo_gen()
+x = 1
+for i in gen:
+    if x < 10:
+        print(f"!{x} = {i}")
+        x += 1
+    else:
+        break

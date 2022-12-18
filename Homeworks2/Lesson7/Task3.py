@@ -29,3 +29,50 @@ make_order() вернет строку: *****\n*****\n*****.
 Подсказка: подробный список операторов для перегрузки доступен по ссылке.
 
 """
+
+
+class Cell:
+    def __init__(self, quantity):
+        self.quantity = int(quantity)
+
+    def __str__(self):
+        return f"{'* ' * self.quantity}"
+
+    def __add__(self, other):
+        return Cell(self.quantity + other.quantity)
+
+    def __sub__(self, other):
+        if self.quantity - other.quantity > 0:
+            return Cell(self.quantity - other.quantity)
+        else:
+            return f"Операция вычитания невозможна"
+
+    def __mul__(self, other):
+        return Cell(self.quantity * other.quantity)
+
+    def __truediv__(self, other):
+        return Cell(self.quantity // other.quantity)
+
+    def make_order(self, columns):
+        rows = ""
+        for i in range(self.quantity // columns):
+            rows += f"{'* ' * columns}\n"
+        rows += f"{'* ' * (self.quantity % columns)}"
+        return rows
+
+
+cell1 = Cell(18)
+cell2 = Cell(7)
+print("1 клетка:")
+print(cell1.make_order(5))
+print("2 клетка:")
+print(cell2.make_order(3))
+print()
+print("Сложение:")
+print(cell1 + cell2)
+print("Вычитание:")
+print(cell1 - cell2)
+print("Умножение:")
+print(cell1 * cell2)
+print("Деление:")
+print(cell1 / cell2)

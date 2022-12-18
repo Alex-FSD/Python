@@ -16,3 +16,27 @@
 При этом работа скрипта не должна завершаться.
 
 """
+
+
+class ValidValue:
+    def __init__(self):
+        self.valid_list = []
+
+    def input_value(self):
+        is_cycle = True
+        while is_cycle:
+            try:
+                value = input("Введите число:")
+                if value.lower() == "quit":
+                    is_cycle = False
+                else:
+                    value = int(value)
+                    self.valid_list.append(value)
+            except ValueError:
+                print(f"Недопустимое значение")
+        return self.valid_list
+
+
+print("Для выхода, введите 'quit'")
+valid_value = ValidValue()
+print(f"Список: {valid_value.input_value()}")
